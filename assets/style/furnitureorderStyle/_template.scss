@@ -13,3 +13,15 @@
   font-family: "Tenor Sans", sans-serif;
   src: url(../aboutStyle/aboutFonts/TenorSans-Regular.ttf);
 }
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  max-width: 1048px;
+  width: 100%;
+margin: 0 auto;
+padding: 0 15px;
+}
