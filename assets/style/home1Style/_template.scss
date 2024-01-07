@@ -1,0 +1,46 @@
+// Подключить шрифты и шаблоны правил % через extend и миксины @mixin через include
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url(../masterclassbuffetStyle/masterclassbuffetFonts/OpenSans-VariableFont_wdth.ttf);
+}
+
+@font-face {
+    font-family: "Tenor Sans", sans-serif;
+    src: url(../masterclassbuffetStyle/masterclassbuffetFonts/TenorSans-Regular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+%buttom{
+    background: #a1b29f;
+    color: #f6f6f6;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    border: 0;
+    padding: 18px 56px;
+    &:hover{
+        background: #678064;
+    }
+}
+%title-global{
+        color: #57463A;
+        font-size: 48px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 125%;
+}
+%title-text{
+    font-size: 18px;
+    font-weight: 300;
+    color: #323232;
+    font-weight: 300;
+    font-style: normal;
+    // line-height: 150%;
+}
