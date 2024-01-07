@@ -1,67 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="assets/style/homeStyle/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-row">
-        <nav class="header-menu-left">
-          <a href="#" class="header-menu__link">Мастер-классы</a>
-          <a href="#" class="header-menu__link">Мебель на заказ</a>
-        </nav>
-        <div class="logotip">
-          <img src="assets/images/homeImg/icons/logo_icon.svg" alt="logotip" />
-        </div>
-        <nav class="header-menu-right">
-          <a href="#" class="header-menu__link">Контакты</a>
-          <a href="#" class="header-menu__link">О нас</a>
-        </nav>
-      </div>
-    </header>
-    <footer class="footer">
-      <div class="footer-row">
-        <div class="info">
-          ИП Колодезников-Матчитов Н.И. <br />
-          ИНН 143515646663
-        </div>
-        <nav class="footer-menu">
-          <a href="#" class="footer-menu__link">Мастер-классы</a>
-          <a href="#" class="footer-menu__link">Мебель на заказ</a>
-        </nav>
-        <nav class="footer-menu">
-          <a href="#" class="footer-menu__link">Контакты</a>
-          <a href="#" class="footer-menu__link">О нас</a>
-        </nav>
-        <nav class="footer-menu">
-          <a href="#" class="footer-menu__link">Политика кофиденциальности</a>
-          <a href="#" class="footer-menu__link">Договор оферты</a>
-        </nav>
-        <section class="buttons">
-          <button class="button">
-            <img
-              class="telegram_icon"
-              src="assets/images/homeImg/icons/telegram_icon.svg"
-              alt="telegram_icon"
-            />
-          </button>
-          <button class="button">
-            <img
-              src="assets/images/homeImg/icons/instagram_icon.svg"
-              alt="instagram"
-            />
-          </button>
-          <button class="button">
-            <img
-              src="assets/images/homeImg/icons/whatsapp_icon.svg"
-              alt="whatsapp"
-            />
-          </button>
-        </section>
-      </div>
-    </footer>
-  </body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Home (prototype)</title>
+      <link rel="stylesheet" href="assets/style/homeStyle/style.css" />
+   </head>
+   <body>
+      <header class="header">
+         <div class="header-burger"><img class="burger" src="./assets/images/burger.svg" alt="#">
+         </div>
+         <div class="header-row">
+            <nav class="header-menu-left">
+               <a href="#" class="header-menu__link">Мастер-классы</a>
+               <a href="#" class="header-menu__link">Мебель на заказ</a>
+            </nav>
+            <div class="logotip">
+               <img
+                  src="assets/images/homeImg/icons/logo_icon.svg"
+                  alt="logotip"
+               />
+            </div>
+            <nav class="header-menu-right">
+               <a href="#" class="header-menu__link">Контакты</a>
+               <a href="#" class="header-menu__link">О нас</a>
+            </nav>
+         </div>
+      </header>
+      <main>
+         <section class="block-3">
+            <div class="container">
+               <div class="block-3__title">
+                  NIKASON BRAND это семейная мастеркая
+               </div>
+            </div>
+            <div class="block-3__row column">
+               <div class="column__items-1">
+                  <div class="column__items-img">
+                     <img
+                        class="items-img"
+                        src="assets/images/photo-1.svg"
+                        alt="#"
+                     />
+                  </div>
+               </div>
+               <div class="column__items-2">
+                  <p>Саргылана и Никита Колодезниковы-Матчитовы</p>
+                  <p>
+                     Саргылана - рестовратор-декоратор, преображает и дарит
+                     вторую жизнь старой мебели.
+                  </p>
+                  <p>
+                     Никита - мастер по дереву, вся мебель делается его умелыми
+                     руками.
+                  </p>
+                  <button class="button-items">Подробнее о нас</button>
+               </div>
+            </div>
+         </section>
+         <section class="block-4">
+            <div class="container">
+               <div class="block-4__title">Посмотрите видео о нас</div>
+               <div class="block-4__video">
+                  <video src="./assets/video/video.mp4"
+                  controls 
+                  width="1160"
+                  height="700"
+                  preload="metadata"
+                  autoplay
+                  muted > 
+                  </video>
+               </div>
+            </div>
+         </section>
+         <section class="block-5">
+            <div class="container">
+               <div class="block-5__title">Наши услуги</div>
+            </div>
+            <div class="block-5__rows">
+               <div class="block-5__row-1 column">
+                  <div class="column-1">
+                     <div class="column-item__img">
+                        <img
+                           class="item-img"
+                           src="assets/images/photo-2.svg"
+                           alt="#"
+                        />
+                     </div>
+                  </div>
+                  <div class="column-2">
+                     <div class="column-2__title">Мебель на заказ</div>
+                     <div class="column-2__text">
+                        <p>Мебель под заказ по индивидуальным размерам это гарантия
+                        отличного качества, долговечность, экологичность и
+                        эксклюзивность наших изделий.</p>
+                        <p>Возможность создания
+                        своего неповторимого стиля, уникальность и
+                        неповторимость каждого изделия.</p>
+                     </div>
+                     <button class="column-2__btn">Заказать мебель</button>
+                  </div>
+               </div>
+               <div class="block-5__row-2">
+                  <div class="column-1">
+                     <div class="column-item__img">
+                        <img
+                           class="item-img"
+                           src="assets/images/photo-3.svg"
+                           alt="#"
+                        />
+                     </div>
+                  </div>
+                  <div class="column-2">
+                     <div class="column-2__title">Мастер-классы</div>
+                     <div class="column-2__text">
+                        Что делать, если память о предках хочется сохранить, но
+                        к вашему интерьеру старая и испорченная мебель не
+                        подходит? Правильно, отреставрировать его и наслаждаться
+                        не только обновлённым видом мебели, но и с теплотой
+                        помнить, что эта мебель была сделана талантливыми
+                        предками.
+                     </div>
+                     <button class="column-2__btn">Купить мастер-класс</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="block-6">
+            <div class="container">
+               <div class="block-6__body">
+                  <div class="block-6__title">
+                     Гарантия качества мебели от NIKASON BRAND
+                  </div>
+                  <div class="wrapper">
+                  <div class="block-6__text">
+                     На каждое изделие ставим авторский логотип (клеймо) как
+                     знак качества и узнаваемости мастера. Таким образом мастер
+                     несёт ответственность за каждое изделие помеченное печатью.
+                     Есть гарантия на 12 месяцев.
+                  </div>
+                  <div class="block-6__logo">
+                     <img
+                        class="item-logo"
+                        src="assets/images/icon.svg"
+                        alt="#"
+                     />
+                  </div>
+               </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer-row">
+            <div class="wrapper-footer">
+            <div class="info">
+               ИП Колодезников-Матчитов Н.И. <br />
+               ИНН 143515646663
+            </div>
+            <nav class="footer-menu">
+               <a href="#" class="footer-menu__link">Мастер-классы</a>
+               <a href="#" class="footer-menu__link">Мебель на заказ</a>
+            </nav>
+            </div>
+            <div class="wrapper-footer">
+            <nav class="footer-menu">
+               <a href="#" class="footer-menu__link">Контакты</a>
+               <a href="#" class="footer-menu__link">О нас</a>
+            </nav>
+            <nav class="footer-menu">
+               <a href="#" class="footer-menu__link"
+                  >Политика кофиденциальности</a
+               >
+               <a href="#" class="footer-menu__link">Договор оферты</a>
+            </nav>
+         </div>
+            <section class="buttons">
+               <button class="button">
+                  <img
+                     class="button-icon"
+                     src="assets/images/homeImg/icons/telegram_icon.svg"
+                     alt="telegram_icon"
+                  />
+               </button>
+               <button class="button">
+                  <img
+                     class="button-icon"
+                     src="assets/images/homeImg/icons/instagram_icon.svg"
+                     alt="instagram"
+                  />
+               </button>
+               <button class="button">
+                  <img
+                     class="button-icon"
+                     src="assets/images/homeImg/icons/whatsapp_icon.svg"
+                     alt="whatsapp"
+                  />
+               </button>
+            </section>
+         </div>
+      </footer>
+   </body>
 </html>

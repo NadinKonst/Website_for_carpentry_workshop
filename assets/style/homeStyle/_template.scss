@@ -4,12 +4,25 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url(../masterclassbuffetStyle/masterclassbuffetFonts/OpenSans-VariableFont_wdth.ttf);
+main {
+  height: 100%;
+  width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+main {
+  background: #f3efea;
 }
 
 @font-face {
-  font-family: "Tenor Sans", sans-serif;
-  src: url(../masterclassbuffetStyle/masterclassbuffetFonts/TenorSans-Regular.ttf);
+  font-family: "Open Sans", sans-serif;
+  src: url(../aboutStyle/aboutFonts/OpenSans-VariableFont_wdth.ttf);
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
