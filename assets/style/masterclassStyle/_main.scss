@@ -1,0 +1,655 @@
+.main{
+    margin: auto;
+    width: 1440px;
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
+}
+
+/* Верхний див с картинкой, заголовком и кнопкой */
+.main__wrapper{
+    width: 1440px;
+    height: 601px;
+    background-image: url(../../images/masterclassImg/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    width: 100%;
+    height: 130vh;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width: 375px){
+        width: 100%;
+        height: 682px;
+        background-image: url(../../images/masterclassImg/background-mobile-version.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        display: flex;
+        flex-direction: column;
+        padding-left: 38px;
+}
+}
+
+/* Общие характеристики для всех h2 */
+.main__title{
+    font-family: $font-title;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+/* Заголовок h2 "Нам доверяют мебель с историей в 120 лет" */
+.first-page-title{
+    color: $color-light;
+    padding-top: 268px;
+    padding-left: 197px;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    padding: 96px 96px 48px 96px;
+    font-size: 64px;
+}
+@media screen and (max-width: 375px){
+    font-size: 32px;
+    padding-top: 249px;
+    padding-left: 0;
+}
+}
+
+/* Общие характеристики для кнопки */
+.btn-mk{
+    height: 60px;
+    width: 328px;
+}
+
+/* Кнопка "Смотреть мастер-классы" */
+.main__view-master-class{
+    background-color: $color-light;
+    color: #4c6D77;
+    font-family: $font-text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border: none;
+    margin-top: 97px;
+    margin-left: 556px;
+@media screen and (min-width: 376px) and (max-width: 768px){
+        margin: 0;
+}
+@media screen and (max-width: 375px){
+    width: 300px;
+    margin-top: 62px;
+    margin-left: 0;
+}
+}
+
+.main__view-master-class:hover{
+    background-color: #4c6D77;
+    color:$color-light;
+}
+
+/* Общие характеристики для большого дива в виде отступов и размеров */
+.main__work-examples{
+    height: 2468px;
+    width: 1440px;
+    padding-left: 139px;
+    padding-top: 160px;
+    background-color: $bg-color-light;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    width: 100%;
+    height: 520vh;
+    padding: 64px 80px 48px 80px;
+}
+@media screen and (max-width: 375px){
+    width: 100%;
+    height: 2468px;
+    padding-left: 38px;
+    padding-top: 77px;
+}
+}
+
+/* Заголовок h2 "Наши работы" */
+.our-works{
+    color: $color-title;
+@media screen and (max-width: 375px){
+        font-size: 32px;
+}
+}
+
+/* Див, объединяющий картинки до/после + кнопка */
+.main__img{
+    width: 1161px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    width: 100%;
+    margin-top: 48px;
+    } 
+@media screen and (max-width: 375px){
+    width: 100%;
+    margin-top: 77px;
+    justify-content: start;
+    column-gap: 22px;
+}
+}
+
+/* Размеры figure для корректировки размера картинки */
+.main__img-before-after{
+@media screen and (min-width: 376px) and (max-width: 768px){
+    width: 47%;
+    }
+}
+
+/* Нижний отступ для figure для первых четырех картинок */
+.main__img-before-after:nth-child(-n+4){
+    margin-bottom: 50px;
+}
+
+/* Нижний отступ для figure для всех картинок для экранов до 768px */
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .main__img-before-after{
+        margin-bottom: 50px;
+    }
+    }
+
+    /* Нижний отступ для figure для всех картинок для экранов до 768px */
+@media screen and (max-width: 375px){
+    .main__img-before-after:nth-child(-n+6){
+        margin-bottom: 40px;
+    }
+    }
+
+/* Размеры для картинок */
+.before-after{
+    width: 260px;
+    height: 300px;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    width: 100%;
+}
+@media screen and (max-width: 375px){
+    width: 139px;
+    height: 161px;
+}
+}
+
+/* Параметры figcaption (подписи для картинок) */
+.img-name{
+    color: $text-color-header;
+    font-family: $font-text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 102.99%;
+    text-align: center;
+    margin-top: 25px;
+@media screen and (max-width: 375px){
+    margin-top: 20px;
+}
+}
+
+/* Параметры для кнопки "Смотреть больше примеров" */
+.main__examples{
+    background: $color-light-green;
+    color: $text-color-footer;
+    font-family: $font-text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 90px;
+    margin-left: 417px;
+    border: none;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    margin: 0 auto;
+}
+@media screen and (max-width: 375px){
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 0;
+}
+}
+
+.main__examples:hover{
+    background-color: #678064;
+}
+
+/* Заголовок h2 "Какие техники изучите на МК" */
+.technique{
+    color: $color-title;
+    margin-top: 160px;
+    margin-bottom: 100px;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    font-size: 32px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+@media screen and (max-width: 375px){
+    font-size: 32px;
+    margin-top: 86px;
+    margin-bottom: 86px;
+}
+}
+
+/* Общий див для списка */
+.main__list{
+    margin-left: 315px;
+@media screen and (min-width: 376px) and (max-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 128px;
+        margin: 0;
+}
+@media screen and (max-width: 375px){
+    margin: 0 auto;
+    padding-right: 44px;
+}
+}
+
+/* Див для каждой отдельной позиции списка */
+.list-number{
+    display: flex;
+    align-items: center;
+    margin-bottom: 57px;
+}
+
+/* Уменьшение отступа у пятого элемента */
+@media screen and (max-width: 375px){
+    .list-number:nth-child(5){
+        margin-bottom: 48px;
+    }
+}
+
+/* Уменьшение отступа у шестого элемента */
+@media screen and (max-width: 375px){
+    .list-number:nth-child(6){
+        margin-bottom: 47px;
+    }
+}
+
+
+/* Отсутствие отступа у последнего элемента */
+.list-number:last-child{
+    margin-bottom: 0px;
+}
+
+/* Див, который создает кружочек для каждого элемента списка */
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-color-footer;
+    font-family: $font-text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    background-color: $color-light-green;
+    margin-right: 43px;
+    flex-shrink: 0;
+@media screen and (max-width: 375px){
+    margin-right: 23px;
+}
+}
+
+/* Вертикальная линия между элементами списка */
+.vertical-circle::before{
+    content: " ";
+    width: 1px;
+    height: 57px;
+    background-color: #C4C4C4;
+    position: relative;
+    left:8px;
+    top:59px;
+}
+
+/* Параметры заголовка h3 */
+.main__subtitle{
+    color: #000;
+    font-family: $font-text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+/* Див с картинкой и заголовком */
+.main__about-second-life{
+    width: 1440px;
+    height: 508px;
+    background-image: url(../../images/masterclassImg/laminate.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    width: 100%;
+    height: 120vh;
+    background-image: url(../../images/masterclassImg/laminate-mobile-version.png);
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 48px;
+}
+@media screen and (max-width: 375px){
+    width: 100%;
+    height: 444px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+}
+
+/* Заголовок h2 "Подари вторую жизнь старой мебели и сохрани историю вашей семьи" */
+.title-about-second-life{
+    width: 950px;
+    color: $color-light;
+    text-align: center;
+@media screen and (min-width: 376px) and (max-width: 768px){
+     font-size: 64px;
+}
+@media screen and (max-width: 375px){
+    width: 360px;
+    font-size: 32px;
+}
+}
+
+/* Общие характеристики для большого дива в виде отступов и размеров */
+.main__master-classes{
+    width: 1440px;
+    height: 2894px;
+    padding-top: 160px;
+    padding-left: 140px;
+    padding-right: 140px;
+    background-color: $bg-color-light;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    width: 100%;
+    height: 810vh;
+    padding: 64px 0 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 375px){
+    width: 100%;
+    height: 3798px;
+    padding-top: 90px;
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+
+/* Заголовок "Мастер-классы по реставрации мебели" */
+.mc-restoration{
+    color: $color-title;
+    @media screen and (min-width: 376px) and (max-width: 768px){
+        width: 65%;
+    }
+@media screen and (max-width: 375px){
+    font-size: 32px;
+    margin-left: 38px;
+    width: 65%;
+}
+}
+
+/* Див, объединяющий картинки с мастер-классами */
+.main__mc-images{
+    margin-top: 104px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: end;
+    justify-items: center;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 375px){
+    margin-top: 155px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/* Размеры для картинок  */
+.our-mc-img{
+    max-width: 200px;
+    max-height: 247px;
+@media screen and (max-width: 375px){
+    max-width: 148px;
+    max-height: 182px;
+}
+}
+
+/* Параметры figcaption (подписи для картинок) */
+.mc-img-name{
+    color: $text-color-header;
+    font-family: $font-text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 23px;
+}
+
+/* Отступ для figure для первых четырех картинок */
+.main__our-mc:nth-child(-n+4){
+    margin-bottom: 50px;
+}
+
+/* Отступ для figure для первых шести картинок */
+@media screen and (max-width: 375px){
+    .main__our-mc:nth-child(-n+6){
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Отступ для figure для первых шести картинок для планшета */
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .main__our-mc:nth-child(-n+6){
+    margin-bottom: 50px;
+}
+}
+
+
+/* Заголовок "Мастер-классы по столярному делу" */
+.joinery{
+    color: $color-title;
+    margin-top: 158px;
+    margin-bottom: 99px;
+@media screen and (min-width: 376px) and (max-width: 768px){
+    margin-top: 80px;
+    margin-bottom: 48px;
+    width: 65%;
+}
+@media screen and (max-width: 375px){
+    margin-top: 98px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    font-size: 32px;
+}
+}
+
+/* Див, объединяющий картинки по столярному делу */
+.main__mc-joinery{
+    display: flex;
+    gap: 40px;
+@media screen and (max-width: 768px){
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
+/* Параметры figcaption */
+.main__about-joinery{
+    @media screen and (max-width: 375px){
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        }
+}
+
+/* Размеры для картинок  */
+.joinery-img{
+    width: 560px;
+    height: 560px;
+    @media screen and (max-width: 375px){
+    width: 300px;
+    height: 300px;
+    }
+
+}
+
+/* Параметры figcaption (подписи для картинок) */
+.joinery-img-name{
+    color: $text-color-header;
+    font-family: $font-text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 20px;
+    @media screen and (max-width: 375px){
+    width: 62%;
+}
+    
+}
+
+/* Див, объединяющий инфу по редизайну */
+.main__redesign{
+    margin-top: 157px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+@media screen and (max-width: 768px){
+        display: none;
+}
+}
+
+/* Параметры для дива с текстовой частью */
+.description{
+    padding-top: 80px;
+}
+
+/* Заголовок "Руководство по редизайну деревянной мебели" */
+.redesign{
+    color: $color-title;
+}
+
+/* Параграф */
+.about-redesign{
+    color: #000;
+    font-family: $font-text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    margin-top: 100px;
+    margin-bottom: 47px;
+}
+
+/* Параметры кнопки "Подробнее"*/
+.details{
+    width: 245px;
+    height: 60px;
+    background-color: $color-light-green;
+    color: $color-light;
+    font-family: $font-text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border: none;
+    @media screen and (max-width: 375px){
+    margin-left: 38px;
+    }
+}
+
+/* Кнопка при наведении курсора */
+.details:hover{
+    background-color: #678064;
+}
+
+/* Параметры для картинки */
+.redesign-img{
+    border: 1px solid black;
+    width: 100%;
+}
+
+/* Див, объединяющий инфу по редизайну для планшетной и мобильной версии (для перестройки структуры) */
+.main__redesign-tablet-version{
+    margin-top: 80px;
+@media screen and (min-width: 769px){
+    display: none;
+}
+@media screen and (max-width: 375px){
+    margin-top: 98px;
+}
+}
+
+/* Параметры для заголовка h2 "Руководство по редизайну деревянной мебели" */
+.redesign-tablet-version{
+    margin-bottom: 32px;
+    width: 65%;
+@media screen and (max-width: 375px){
+    width: 314px;
+    font-size: 32px;
+    margin-left: 35px;
+    margin-bottom: 15px;
+}   
+}
+
+/* Параметры для параграфа для компьютера и планшета */
+.tablet-version{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 65%;
+@media screen and (max-width: 375px){
+    display: none;
+}
+}
+
+/* Параметры для параграфа для мобильной версии */
+.mobile-version{
+    width: 325px;
+    margin-left: 38px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    @media screen and (min-width: 376px){
+    display: none;
+    }
+}
+
+/* Параметры для картинки */
+.redesign-img-tablet-version{
+    border: 1px solid black;
+    width: 65%;
+@media screen and (max-width: 375px){
+    width: 300px;
+    height: 475px;
+    margin-left: 38px;
+    margin-bottom: 90px;
+}
+}
+
+
+

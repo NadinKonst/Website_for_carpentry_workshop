@@ -1,0 +1,921 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(../aboutStyle/aboutFonts/OpenSans-VariableFont_wdth.ttf);
+}
+@font-face {
+  font-family: "Tenor Sans", sans-serif;
+  src: url(../aboutStyle/aboutFonts/TenorSans-Regular.ttf);
+}
+.header-row {
+  margin: auto;
+  width: 1440px;
+  height: 138px;
+  background-color: #f3efea;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  border-bottom: 1px solid #000;
+}
+@media screen and (max-width: 768px) {
+  .header-row {
+    width: 100%;
+    justify-content: flex-end;
+    height: 10vh;
+  }
+}
+.header-row .header-menu-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 320px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .header-row .header-menu-left {
+    display: none;
+  }
+}
+.header-row .header-menu-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 320px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .header-row .header-menu-right {
+    display: none;
+  }
+}
+.header-row .header-menu__link {
+  text-decoration: none;
+  color: #323232;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.header-row .header-menu__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 769px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+.icon {
+  height: 50px;
+  width: 178px;
+}
+
+@media screen and (max-width: 768px) {
+  .logotip {
+    display: none;
+  }
+}
+.main {
+  margin: auto;
+  width: 1440px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+}
+
+/* Верхний див с картинкой, заголовком и кнопкой */
+.main__wrapper {
+  width: 1440px;
+  height: 601px;
+  background-image: url(../../images/masterclassImg/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__wrapper {
+    width: 100%;
+    height: 130vh;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__wrapper {
+    width: 100%;
+    height: 682px;
+    background-image: url(../../images/masterclassImg/background-mobile-version.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-left: 38px;
+  }
+}
+
+/* Общие характеристики для всех h2 */
+.main__title {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* Заголовок h2 "Нам доверяют мебель с историей в 120 лет" */
+.first-page-title {
+  color: #F6F6F6;
+  padding-top: 268px;
+  padding-left: 197px;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .first-page-title {
+    padding: 96px 96px 48px 96px;
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .first-page-title {
+    font-size: 32px;
+    padding-top: 249px;
+    padding-left: 0;
+  }
+}
+
+/* Общие характеристики для кнопки */
+.btn-mk {
+  height: 60px;
+  width: 328px;
+}
+
+/* Кнопка "Смотреть мастер-классы" */
+.main__view-master-class {
+  background-color: #F6F6F6;
+  color: #4c6D77;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+  margin-top: 97px;
+  margin-left: 556px;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__view-master-class {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__view-master-class {
+    width: 300px;
+    margin-top: 62px;
+    margin-left: 0;
+  }
+}
+
+.main__view-master-class:hover {
+  background-color: #4c6D77;
+  color: #F6F6F6;
+}
+
+/* Общие характеристики для большого дива в виде отступов и размеров */
+.main__work-examples {
+  height: 2468px;
+  width: 1440px;
+  padding-left: 139px;
+  padding-top: 160px;
+  background-color: #f3efea;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__work-examples {
+    width: 100%;
+    height: 520vh;
+    padding: 64px 80px 48px 80px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__work-examples {
+    width: 100%;
+    height: 2468px;
+    padding-left: 38px;
+    padding-top: 77px;
+  }
+}
+
+/* Заголовок h2 "Наши работы" */
+.our-works {
+  color: #57463A;
+}
+@media screen and (max-width: 375px) {
+  .our-works {
+    font-size: 32px;
+  }
+}
+
+/* Див, объединяющий картинки до/после + кнопка */
+.main__img {
+  width: 1161px;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__img {
+    width: 100%;
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__img {
+    width: 100%;
+    margin-top: 77px;
+    justify-content: start;
+    -moz-column-gap: 22px;
+         column-gap: 22px;
+  }
+}
+
+/* Размеры figure для корректировки размера картинки */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__img-before-after {
+    width: 47%;
+  }
+}
+
+/* Нижний отступ для figure для первых четырех картинок */
+.main__img-before-after:nth-child(-n+4) {
+  margin-bottom: 50px;
+}
+
+/* Нижний отступ для figure для всех картинок для экранов до 768px */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__img-before-after {
+    margin-bottom: 50px;
+  }
+}
+/* Нижний отступ для figure для всех картинок для экранов до 768px */
+@media screen and (max-width: 375px) {
+  .main__img-before-after:nth-child(-n+6) {
+    margin-bottom: 40px;
+  }
+}
+/* Размеры для картинок */
+.before-after {
+  width: 260px;
+  height: 300px;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .before-after {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .before-after {
+    width: 139px;
+    height: 161px;
+  }
+}
+
+/* Параметры figcaption (подписи для картинок) */
+.img-name {
+  color: #323232;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 102.99%;
+  text-align: center;
+  margin-top: 25px;
+}
+@media screen and (max-width: 375px) {
+  .img-name {
+    margin-top: 20px;
+  }
+}
+
+/* Параметры для кнопки "Смотреть больше примеров" */
+.main__examples {
+  background: #A1B29F;
+  color: #f6f6f6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-top: 90px;
+  margin-left: 417px;
+  border: none;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__examples {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__examples {
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 0;
+  }
+}
+
+.main__examples:hover {
+  background-color: #678064;
+}
+
+/* Заголовок h2 "Какие техники изучите на МК" */
+.technique {
+  color: #57463A;
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .technique {
+    font-size: 32px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .technique {
+    font-size: 32px;
+    margin-top: 86px;
+    margin-bottom: 86px;
+  }
+}
+
+/* Общий див для списка */
+.main__list {
+  margin-left: 315px;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 128px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__list {
+    margin: 0 auto;
+    padding-right: 44px;
+  }
+}
+
+/* Див для каждой отдельной позиции списка */
+.list-number {
+  display: flex;
+  align-items: center;
+  margin-bottom: 57px;
+}
+
+/* Уменьшение отступа у пятого элемента */
+@media screen and (max-width: 375px) {
+  .list-number:nth-child(5) {
+    margin-bottom: 48px;
+  }
+}
+/* Уменьшение отступа у шестого элемента */
+@media screen and (max-width: 375px) {
+  .list-number:nth-child(6) {
+    margin-bottom: 47px;
+  }
+}
+/* Отсутствие отступа у последнего элемента */
+.list-number:last-child {
+  margin-bottom: 0px;
+}
+
+/* Див, который создает кружочек для каждого элемента списка */
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f6f6f6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  background-color: #A1B29F;
+  margin-right: 43px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 375px) {
+  .circle {
+    margin-right: 23px;
+  }
+}
+
+/* Вертикальная линия между элементами списка */
+.vertical-circle::before {
+  content: " ";
+  width: 1px;
+  height: 57px;
+  background-color: #C4C4C4;
+  position: relative;
+  left: 8px;
+  top: 59px;
+}
+
+/* Параметры заголовка h3 */
+.main__subtitle {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+/* Див с картинкой и заголовком */
+.main__about-second-life {
+  width: 1440px;
+  height: 508px;
+  background-image: url(../../images/masterclassImg/laminate.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__about-second-life {
+    width: 100%;
+    height: 120vh;
+    background-image: url(../../images/masterclassImg/laminate-mobile-version.png);
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 48px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__about-second-life {
+    width: 100%;
+    height: 444px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+/* Заголовок h2 "Подари вторую жизнь старой мебели и сохрани историю вашей семьи" */
+.title-about-second-life {
+  width: 950px;
+  color: #F6F6F6;
+  text-align: center;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .title-about-second-life {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .title-about-second-life {
+    width: 360px;
+    font-size: 32px;
+  }
+}
+
+/* Общие характеристики для большого дива в виде отступов и размеров */
+.main__master-classes {
+  width: 1440px;
+  height: 2894px;
+  padding-top: 160px;
+  padding-left: 140px;
+  padding-right: 140px;
+  background-color: #f3efea;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__master-classes {
+    width: 100%;
+    height: 810vh;
+    padding: 64px 0 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__master-classes {
+    width: 100%;
+    height: 3798px;
+    padding-top: 90px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Заголовок "Мастер-классы по реставрации мебели" */
+.mc-restoration {
+  color: #57463A;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .mc-restoration {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mc-restoration {
+    font-size: 32px;
+    margin-left: 38px;
+    width: 65%;
+  }
+}
+
+/* Див, объединяющий картинки с мастер-классами */
+.main__mc-images {
+  margin-top: 104px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: end;
+  justify-items: center;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__mc-images {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__mc-images {
+    margin-top: 155px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Размеры для картинок  */
+.our-mc-img {
+  max-width: 200px;
+  max-height: 247px;
+}
+@media screen and (max-width: 375px) {
+  .our-mc-img {
+    max-width: 148px;
+    max-height: 182px;
+  }
+}
+
+/* Параметры figcaption (подписи для картинок) */
+.mc-img-name {
+  color: #323232;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* Отступ для figure для первых четырех картинок */
+.main__our-mc:nth-child(-n+4) {
+  margin-bottom: 50px;
+}
+
+/* Отступ для figure для первых шести картинок */
+@media screen and (max-width: 375px) {
+  .main__our-mc:nth-child(-n+6) {
+    margin-bottom: 40px;
+  }
+}
+/* Отступ для figure для первых шести картинок для планшета */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .main__our-mc:nth-child(-n+6) {
+    margin-bottom: 50px;
+  }
+}
+/* Заголовок "Мастер-классы по столярному делу" */
+.joinery {
+  color: #57463A;
+  margin-top: 158px;
+  margin-bottom: 99px;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .joinery {
+    margin-top: 80px;
+    margin-bottom: 48px;
+    width: 65%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .joinery {
+    margin-top: 98px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    font-size: 32px;
+  }
+}
+
+/* Див, объединяющий картинки по столярному делу */
+.main__mc-joinery {
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .main__mc-joinery {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Параметры figcaption */
+@media screen and (max-width: 375px) {
+  .main__about-joinery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Размеры для картинок  */
+.joinery-img {
+  width: 560px;
+  height: 560px;
+}
+@media screen and (max-width: 375px) {
+  .joinery-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Параметры figcaption (подписи для картинок) */
+.joinery-img-name {
+  color: #323232;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 375px) {
+  .joinery-img-name {
+    width: 62%;
+  }
+}
+
+/* Див, объединяющий инфу по редизайну */
+.main__redesign {
+  margin-top: 157px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+@media screen and (max-width: 768px) {
+  .main__redesign {
+    display: none;
+  }
+}
+
+/* Параметры для дива с текстовой частью */
+.description {
+  padding-top: 80px;
+}
+
+/* Заголовок "Руководство по редизайну деревянной мебели" */
+.redesign {
+  color: #57463A;
+}
+
+/* Параграф */
+.about-redesign {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  margin-top: 100px;
+  margin-bottom: 47px;
+}
+
+/* Параметры кнопки "Подробнее"*/
+.details {
+  width: 245px;
+  height: 60px;
+  background-color: #A1B29F;
+  color: #F6F6F6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+}
+@media screen and (max-width: 375px) {
+  .details {
+    margin-left: 38px;
+  }
+}
+
+/* Кнопка при наведении курсора */
+.details:hover {
+  background-color: #678064;
+}
+
+/* Параметры для картинки */
+.redesign-img {
+  border: 1px solid black;
+  width: 100%;
+}
+
+/* Див, объединяющий инфу по редизайну для планшетной и мобильной версии (для перестройки структуры) */
+.main__redesign-tablet-version {
+  margin-top: 80px;
+}
+@media screen and (min-width: 769px) {
+  .main__redesign-tablet-version {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main__redesign-tablet-version {
+    margin-top: 98px;
+  }
+}
+
+/* Параметры для заголовка h2 "Руководство по редизайну деревянной мебели" */
+.redesign-tablet-version {
+  margin-bottom: 32px;
+  width: 65%;
+}
+@media screen and (max-width: 375px) {
+  .redesign-tablet-version {
+    width: 314px;
+    font-size: 32px;
+    margin-left: 35px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Параметры для параграфа для компьютера и планшета */
+.tablet-version {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 65%;
+}
+@media screen and (max-width: 375px) {
+  .tablet-version {
+    display: none;
+  }
+}
+
+/* Параметры для параграфа для мобильной версии */
+.mobile-version {
+  width: 325px;
+  margin-left: 38px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+@media screen and (min-width: 376px) {
+  .mobile-version {
+    display: none;
+  }
+}
+
+/* Параметры для картинки */
+.redesign-img-tablet-version {
+  border: 1px solid black;
+  width: 65%;
+}
+@media screen and (max-width: 375px) {
+  .redesign-img-tablet-version {
+    width: 300px;
+    height: 475px;
+    margin-left: 38px;
+    margin-bottom: 90px;
+  }
+}
+
+.footer-row {
+  margin: auto;
+  width: 1440px;
+  height: 300px;
+  flex-shrink: 0;
+  background-color: #715b4b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  /* Ссылки при наведении курсора подчеркиваются */
+}
+@media screen and (max-width: 768px) {
+  .footer-row {
+    width: 100%;
+    align-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer-row {
+    height: 650px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+.footer-row .footer-menu {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .footer-row .footer-menu {
+    row-gap: 10px;
+  }
+}
+.footer-row .footer-menu__link,
+.footer-row .info {
+  font-family: "Open Sans", sans-serif;
+  color: #f6f6f6;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  text-decoration: none;
+}
+@media screen and (max-width: 375px) {
+  .footer-row .info {
+    order: 1;
+  }
+}
+.footer-row .footer-menu__link:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .footer-row .tablet-hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 376px) {
+  .footer-row .tel-show {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .footer-row .tablet-show {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer-row .tablet-show {
+    display: none;
+  }
+}
+.footer-row .buttons {
+  display: flex;
+  align-content: center;
+  gap: 18px;
+}
+.footer-row .buttons .button {
+  background-color: #715b4b;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 1px solid #f6f6f6;
+}
+.footer-row .buttons .telegram_icon {
+  margin-right: 4px;
+  margin-top: 4px;
+}
+@media screen and (max-width: 768px) {
+  .footer-row .buttons {
+    order: -1;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
