@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(../buffetStyle/buffetFonts/OpenSans-VariableFont_wdth.ttf);
+}
+
+@font-face {
+  font-family: "Tenor Sans", sans-serif;
+  src: url(../buffetStyle/buffetFonts/TenorSans-Regular.ttf);
+}
+
+%button-green {
+  width: 140px;
+  height: 50px;
+  flex-shrink: 0;
+  background: #a1b29f;
+  border: #a1b29f;
+}
