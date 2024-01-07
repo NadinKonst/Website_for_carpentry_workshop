@@ -1,0 +1,127 @@
+@import './template';
+@import './vars';
+
+.footer {
+  .footer-row {
+  position: absolute;
+  margin: auto;
+  width: 1440px;
+  height: 300px;
+  flex-shrink: 0;
+  background-color: $bg-color-brown;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+
+  @media (max-width: $breakpoint_md) {
+    max-width: 768px;
+    width: 100%;
+    height: 270px;
+    padding-left: 50px;
+    justify-content: space-evenly;
+  }
+  @media (max-width: $breakpoint_sm) {
+    max-width: 376px;
+    width: 100%;
+    height: 772px;
+    padding: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $breakpoint_md) {
+      width: 180px;
+      text-wrap: nowrap;
+      
+    }
+    @media (max-width: $breakpoint_sm) {
+      width: 250px;
+    }
+  }
+
+  .footer-menu__link,
+    .info {
+    font-family: $font-text;
+    color: #f6f6f6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    text-decoration: none;
+    @media (max-width: $breakpoint_md) {
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 200%;
+    }
+    @media (max-width: $breakpoint_sm) {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 150%;
+      padding: 9px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer-menu__link:hover {
+      text-decoration: underline;
+    }
+    .info {
+      @media (max-width: $breakpoint_sm) {
+        order: 1;
+      }
+    }
+
+  .buttons {
+    display: flex;
+    align-content: center;
+    gap: 18px;
+    @media (max-width: $breakpoint_md) {
+      order: -1;
+      width: 100%;
+      margin: 30px 44px;
+    }
+    @media (max-width: $breakpoint_sm) {
+      gap: 18px;
+      order: -1;
+    }
+    .button {
+      background-color: $bg-color-brown;
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+      border-radius: 50px;
+      border: 1px solid #f6f6f6;
+      @media (max-width: $breakpoint_md) {
+        width: 30px;
+        height: 30px;
+      }
+      @media (max-width: $breakpoint_sm) {
+        width: 55px;
+        height: 55px;
+        margin-top: -90px;
+      }
+    }
+    .telegram_icon {
+      margin-right: 4px;
+      margin-top: 4px;
+      }
+      .icon {
+        @media (max-width: $breakpoint_md) {
+          width: 14px;
+          padding-top: 4px;
+        }
+        @media (max-width: $breakpoint_sm) {
+          width: 30px;
+          padding-top: 4px;
+        }
+      }
+    }
+  }
+}
+
