@@ -41,4 +41,5 @@ Main technologies: HTML5, SCSS, GIT, Flexbox, Agile teamwork, cross-browser adap
     <img alt="easdln" src="https://img.shields.io/badge/-easdln-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
+
 ***
